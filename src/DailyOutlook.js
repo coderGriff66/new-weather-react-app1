@@ -1,22 +1,26 @@
 import React from "react";
-import WxIcons from "./WxIcons";
+
+import HourlyOutlook from "./HourlyOutlook";
 
 export default function DailyOutlook(props) {
-  function hours() {
-    let time = new Date(props.data.dt * 100);
-    return time.toLocaleString("en-US", { hour: "numeric", minute: "numeric", hour12: true,});
-
-  }
-    return (
-    <div className="DailyOutlook">
-       <div className="card">
-          <h5 className="DailyOutlook-time">{hours()}</h5>
-            <WxIcons code={props.data.icon} size={35} />
-              <div>
-              <span className="DailyOutlook-temp"><strong>{props.data.temp}°</strong></span>
-              </div>
-            </div>
-      </div>
+  return (
     
-    );
-  } 
+     <div><h4>Hourly Oulook</h4>     
+        <div className="ForecastPlanner">
+          <div className="row"> 
+             {forecast.hourly.map(function (hourlyForecast, index) {
+                if (index > 0 && index < 4) {
+             return (
+              <div className="col" key={index}> 
+            <HourlyOutlook data={hourlyForecast} />
+              </div>
+            );
+        } else {
+          return null;
+        }
+      })}
+       </div>     
+      </div>
+    </div>
+  );  
+}

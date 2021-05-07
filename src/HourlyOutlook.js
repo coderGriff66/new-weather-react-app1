@@ -6,7 +6,7 @@ import "./HourlyOutlook.css";
 
 export default function HourlyOutlook(props) {
   function hours() {
-    let time = new Date(props.data.dt * 100);
+    let time = new Date(props.data.dt * 1000);
     return time.toLocaleString("en-US", { hour: "numeric", minute: "numeric", hour12: true,});
 
   }

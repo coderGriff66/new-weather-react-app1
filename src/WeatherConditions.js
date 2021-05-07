@@ -10,7 +10,7 @@ export default function WeatherConditions(props) {
           <div className="col-7">
             <div className="Card Leftside">
               <h2 className="text-capitalize">{props.data.description}</h2>
-                <div className="clearfix">
+                <div className="d-flex align-items-center">
                   <div className="float-left">
                     <WxIcons code={props.data.icon} size={100} />
                   </div>

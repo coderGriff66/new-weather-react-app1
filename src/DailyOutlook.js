@@ -6,7 +6,7 @@ export default function DailyOutlook(props) {
   return (
     
      <div>
-       <h4>Hourly Outlook</h4>     
+       <h4>HOURLY OUTLOOK</h4>     
         <div className="ForecastPlanner">
           <div className="row"> 
              {props.data.map(function (hourlyForecast, index) {

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import DailyOutLook from "./DailyOutlook";
+import DailyOutlook from "./DailyOutlook";
 
 import DayPlanner from "./DayPlanner";
 import axios from "axios";
@@ -20,8 +20,9 @@ useEffect(() => {
   if (loaded) {
     return (
       <div>
-      <DailyOutlook />
-     <div><h4>5-DAY PLANNER</h4>     
+      <DailyOutlook data={forecast.hourly} />
+        <div>
+          <h4>5-DAY PLANNER</h4>     
       <div className="ForecastPlanner">
         <div className="row"> 
         {forecast.daily.map(function (dailyForecast, index) {
@@ -39,6 +40,7 @@ useEffect(() => {
       })}
        </div>     
       </div>
+    </div>
     </div>
     );
       

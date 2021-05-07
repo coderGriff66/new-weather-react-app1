@@ -1,6 +1,7 @@
 import React from "react";
 import WxIcons from "./WxIcons";
 
+
 export default function HourlyOutlook(props) {
   function hours() {
     let time = new Date(props.data.dt * 100);
@@ -12,9 +13,9 @@ export default function HourlyOutlook(props) {
     <div className="HourlyOutlook">
        <div className="card">
           <h5 className="HourlyOutlook-time">{hours()}</h5>
-            <WxIcons code={props.data.icon} size={35} />
+            <WxIcons code={props.data.weather[0].icon} size={35} />
               <div>
-              <span className="HourlyOutlook-temp"><strong>{props.data.temp}°</strong></span>
+              <span className="HourlyOutlook-temp"><strong>{Math.round(props.data.temp)}°</strong></span>
               </div>
             </div>
       </div>

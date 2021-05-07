@@ -5,11 +5,12 @@ import HourlyOutlook from "./HourlyOutlook";
 export default function DailyOutlook(props) {
   return (
     
-     <div><h4>Hourly Oulook</h4>     
+     <div>
+       <h4>Hourly Outlook</h4>     
         <div className="ForecastPlanner">
           <div className="row"> 
-             {forecast.hourly.map(function (hourlyForecast, index) {
-                if (index > 4) {
+             {props.data.map(function (hourlyForecast, index) {
+                if (index > 4 && index < 9) {
              return (
               <div className="col" key={index}> 
             <HourlyOutlook data={hourlyForecast} />

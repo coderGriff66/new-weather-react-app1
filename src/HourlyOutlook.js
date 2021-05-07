@@ -8,13 +8,13 @@ export default function HourlyOutlook(props) {
 
   }
     return (
-      
+
     <div className="HourlyOutlook">
        <div className="card">
-          <h5 className="DailyOutlook-time">{hours()}</h5>
+          <h5 className="HourlyOutlook-time">{hours()}</h5>
             <WxIcons code={props.data.icon} size={35} />
               <div>
-              <span className="DailyOutlook-temp"><strong>{props.data.temp}°</strong></span>
+              <span className="HourlyOutlook-temp"><strong>{props.data.temp}°</strong></span>
               </div>
             </div>
       </div>

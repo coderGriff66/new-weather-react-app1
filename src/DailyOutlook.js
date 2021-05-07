@@ -9,7 +9,7 @@ export default function DailyOutlook(props) {
         <div className="ForecastPlanner">
           <div className="row"> 
              {forecast.hourly.map(function (hourlyForecast, index) {
-                if (index > 0 && index < 4) {
+                if (index > 4) {
              return (
               <div className="col" key={index}> 
             <HourlyOutlook data={hourlyForecast} />

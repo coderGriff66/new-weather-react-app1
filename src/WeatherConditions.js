@@ -1,6 +1,6 @@
 import React from "react";
 import WxIcons from "./WxIcons";
-import WxTemperature from "./WxTemperature";
+
 import "./WeatherConditions.css";
 
 export default function WeatherConditions(props) {
@@ -14,8 +14,9 @@ export default function WeatherConditions(props) {
                   <div className="float-left">
                     <WxIcons code={props.data.icon} size={100} />
                   </div>
-                  <div className="float-left">
-                    <WxTemperature celsius={props.data.temperature} />
+                  <div className="float-left mainTemperature">
+                   {Math.round(props.data.temperature)} 
+                   <span className="unit">°C</span>
                   </div>
                 </div>
             </div>

@@ -31,9 +31,7 @@ useEffect(() => {
               <div className="col" key={index}> 
             <DayPlanner data={dailyForecast} />
               </div>
-     
-
-        );
+         );
         } else {
           return null;
         }

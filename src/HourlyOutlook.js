@@ -15,7 +15,7 @@ export default function HourlyOutlook(props) {
     <div className="OutlookPanels">
       
           <h5 className="HourlyOutlook-time">{hours()}</h5>
-            <WxIcons code={props.data.weather[0].icon} size={35} />
+            <WxIcons code={props.data.weather[0].icon} size={33} />
               <div>
               <span className="HourlyOutlook-temp"><strong>{Math.round(props.data.temp)}°</strong></span>
               </div>

@@ -9,6 +9,10 @@
   margin-right: 15px;
 }
 
+.HourlyOutlook-time {
+  font-size: 15px;
+}
+
 .HourlyOutlook-temp {
   font-size: 25px;
 }

@@ -1,0 +1,9 @@
+.WxTemperature .temperature {
+  font-size: 100px;
+  padding: 25px;
+}
+
+.unit {
+  position: relative;
+  top: -60px;
+}

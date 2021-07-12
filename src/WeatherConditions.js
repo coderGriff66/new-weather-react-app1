@@ -15,10 +15,10 @@ export default function WeatherConditions(props) {
                   <div className="float-left">
                     <WxIcons code={props.data.icon} size={100} />
                   </div>
-                  <div className="float-left mainTemperature">
-                   {Math.round(props.data.temperature)} 
-                   <WeatherTemperature />
-                   <span className="unit">°C | °F</span> 
+                  <div className="float-left">
+                 
+                   <WeatherTemperature celsius={props.data.temperature} />
+                   
                   </div>
                 </div>
             </div>

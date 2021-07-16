@@ -3,6 +3,7 @@ import HeaderDate from "./HeaderDate";
 import SearchEngine from "./SearchEngine";
 
 import './App.css';
+import './styles.css';
 
 export default function App() {
   return (

@@ -2,11 +2,16 @@
   list-style-type: none;
   font-size: 22px;
   padding-right: 10px;
+  
+}
 
+h2 {
+   color: floralwhite;
+  text-shadow: 2px 3px rgb(7, 7, 7);
 }
 
 .WeatherConditions .Card.Leftside {
-  background: rgba(203, 229, 255, 0.3);
+  background: rgba(116, 200, 248, 0.3);
   box-shadow: 8px 8px 8px rgba(12, 0, 124, 0.3);
   border: solid rgb(127, 136, 146) 2px;
   border-radius: 4px;
@@ -21,7 +26,7 @@
  
 .Card.Rightside {
   box-shadow: 8px 8px 8px rgba(12, 0, 124, 0.3);
-  background: rgba(203, 229, 255, 0.3);
+  background: rgba(116, 200, 248, 0.3);
   border: solid rgb(127, 136, 146) 2px;
   border: none;
   border-radius: 4px;

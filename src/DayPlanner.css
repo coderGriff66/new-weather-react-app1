@@ -9,10 +9,17 @@
   margin-right: 15px;
 }
 
+.DayPlanner-day {
+  color: rgb(4, 16, 85);
+}
+
 .DayPlanner-temps {
+  color: floralwhite;
   font-size: 20px;
+  text-shadow: 2px 3px rgb(7, 7, 7);
 }
 
 .minTemp {
+  color: rgb(195, 234, 255);
   padding-left: 10px;
 }

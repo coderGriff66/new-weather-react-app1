@@ -27,10 +27,10 @@ export default function WeatherConditions(props) {
             <div className="col-5">
               <div className="Card Rightside">
                 <ul className="WeatherConditions">
-                  <li>Feels Like: <strong>{Math.round(props.data.feelsLike)}°</strong></li>
-                  <li>Humidity: <strong>{props.data.humidity}%</strong></li>
-                  <li>Wind: <strong>{Math.round(props.data.winds)} km/h</strong></li>
-                  <li>Low Temp: <strong>{Math.round(props.data.tempMin)}°</strong></li>
+                  <li>Feels Like: <strong class="Conditions">{Math.round(props.data.feelsLike)}°</strong></li>
+                  <li>Humidity: <strong class="Conditions">{props.data.humidity}%</strong></li>
+                  <li>Wind: <strong class="Conditions">{Math.round(props.data.winds)} km/h</strong></li>
+                  <li>Low Temp: <strong class="Conditions">{Math.round(props.data.tempMin)}°</strong></li>
                 </ul>
               </div>
             </div>

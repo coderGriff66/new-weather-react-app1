@@ -15,7 +15,7 @@ export default function App() {
 
           <br />
           <footer>
-            <strong>This project coded by Jennifer Griffin and is</strong>
+            <strong>This project coded by Jennifer Griffin and is</strong> <nbsp />
             <a href="https://github.com/coderGriff66/new-weather-react-app1" target="_blank" rel="noreferrer"> open-sourced on GitHub</a>
             <br />
             <small>&emsp;Photo by www.paulvoie.com</small>

@@ -10,9 +10,12 @@
 }
 
 .HourlyOutlook-time {
+  color: rgb(4, 16, 85);
   font-size: 15px;
 }
 
 .HourlyOutlook-temp {
+  color: floralwhite;
   font-size: 25px;
+  text-shadow: 2px 3px rgb(7, 7, 7);
 }

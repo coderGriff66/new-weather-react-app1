@@ -1,12 +1,18 @@
 .WeatherConditions li {
   list-style-type: none;
+  color: rgb(4, 16, 85);
   font-size: 22px;
   padding-right: 10px;
   
 }
 
+.Conditions {
+  color: rgb(198, 234, 255);
+  text-shadow: 2px 3px rgb(7, 7, 7);
+}
+
 h2 {
-   color: floralwhite;
+  color: floralwhite;
   text-shadow: 2px 3px rgb(7, 7, 7);
 }
 
@@ -41,6 +47,7 @@ h2 {
 }
 
 .mainTemperature {
+  color: rgb(4, 16, 85);
   font-size: 100px;
 }
 

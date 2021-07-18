@@ -22,4 +22,5 @@
 .minTemp {
   color: rgb(195, 234, 255);
   padding-left: 10px;
+  text-shadow: 1px 2px rgb(7, 7, 7);
 }
